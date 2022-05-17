@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bootstrap-form-validation</title>
 </head>
 <body>
   <div class="container mt-3">
-    
+    <h3>Form Validation</h3>
+    <p>Form is validated using Bootstrap5 classes .was-validated</p>
+    <form action="/barry.html" class="was-validated">
+
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">Please fill out this field</div>
+      </div>
+      
+    </form>
+
   </div>
 </body>
 </html>
